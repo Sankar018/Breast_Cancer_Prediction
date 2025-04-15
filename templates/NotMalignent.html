@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction - Benign Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='NotMalignant.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital@0;1&family=Raleway:ital,wght@0,459;1,459&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="head">Breast Cancer Prediction Result</h1>
+        <div class="tagline">
+            <a href="{{url_for('index1')}}" id="home">Home</a>
+            <a href="{{url_for('index2')}}"id="a1" >Check Symptoms</a>
+            <a href="{{url_for('index3')}}" id="a1">Self Observation</a>
+            <a href="#contact_sec" id="a1">Contact Us</a>
+        </div>
+    </header>
+    <div class="container">
+
+        <!-- Result Card -->
+        <div class="result-card benign">
+            <div class="result-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Your results indicate a <span>low risk</span> of malignant breast cancer.</h2>
+            <p>Based on your MRI report, our predictive model has classified this case as <strong>benign</strong>. While this is good news, we still recommend regular check-ups and monitoring.</p>
+        </div>
+
+        <!-- Next Steps -->
+        <section class="next-steps">
+            <h3><i class="fas fa-list-check"></i> What Should You Do Now?</h3>
+            <ul>
+                <li><i class="fas fa-user-md"></i> <strong>Follow-up with your doctor</strong> - Share these results with your physician.</li>
+                <li><i class="fas fa-calendar-check"></i> <strong>Schedule regular screenings</strong> - Early detection saves lives.</li>
+                <li><i class="fas fa-heartbeat"></i> <strong>Maintain breast health awareness</strong> - Continue self-examinations.</li>
+                <li><i class="fas fa-apple-alt"></i> <strong>Adopt healthy habits</strong> - Balanced diet and exercise reduce risks.</li>
+            </ul>
+            <button id="scheduleBtn">Check for Self Observation</button>
+        </section>
+
+        <!-- Support & Resources -->
+        <section class="support">
+            <h3><i class="fas fa-hands-helping"></i> Stay Informed</h3>
+            <p>As the tumor is not malignant, it means it’s not cancer. Still, regular check-ups are important to watch for any changes. Follow your doctor’s advice, stay healthy, and pay attention to your body. Most benign tumors are harmless, but it’s good to stay careful and informed.</p>
+            <p>Explore these resources:</p>
+            <div class="resources">
+                <a href="https://www.cancer.org/" target="_blank" class="resource-link">
+                    <i class="fas fa-link"></i> American Cancer Society
+                </a>
+                <a href="https://www.breastcancer.org/" target="_blank" class="resource-link">
+                    <i class="fas fa-link"></i> BreastCancer.org
+                </a>
+                <a href="tel:+180022234234" class="resource-link">
+                    <i class="fas fa-phone"></i> National Cancer Helpline
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="faq">
+            <h3><i class="fas fa-question-circle"></i> Frequently Asked Questions</h3>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">How accurate is this prediction? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>This tool uses machine learning to predict malignancy based on MRI data with high accuracy, but always consult your doctor for confirmation.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Is this tumor dangerous or likely to turn into cancer? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Most non-malignant (benign) tumors are not dangerous and do not turn into cancer. They usually grow slowly and don’t spread to other parts of the body. However, some may grow larger or cause discomfort, depending on their location. In rare cases, certain types of benign tumors can change over time, so it’s important to keep an eye on them. Regular check-ups and scans help your doctor make sure everything stays safe. If there’s any sign of change, your doctor will guide you on what to do. So while the tumor is likely not harmful, staying alert is still important.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">What should I do now and in the future to stay healthy and safe? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>If you have a non-malignant tumor, follow your doctor’s advice closely. Go for regular check-ups to make sure the tumor doesn’t grow or change. If the doctor suggests surgery, it’s usually safe and can prevent future problems. Eat healthy, stay active, and avoid smoking or alcohol to support your overall health. Watch for any new symptoms like pain, swelling, or changes in the lump. Let your doctor know if anything feels different. Most benign tumors are not dangerous, but staying alert and taking care of your body will help you stay safe now and in the future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <p><i class="fas fa-info-circle"></i> <strong>Disclaimer:</strong> This tool does not replace professional medical advice. Always consult a doctor for diagnosis and treatment.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Breast Cancer Prediction | Designed for Awareness and Support By @Sankar & @Mili</p>
+    </footer>
+
+    <script src="{{ url_for('static',filename='NotMalignant.js')}}"></script>
+</body>
+</html>

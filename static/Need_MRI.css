@@ -1,0 +1,130 @@
+body {
+    font-family: "Nunito", serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F72C5B;
+    color: white;
+    padding: 20px;
+}
+#headind1{
+    font-size: 2.2rem;
+    animation: 1s anim1 ease-in;
+}
+#heading2{
+    font-size: 1.5rem;
+    animation: 2s anim1 ease-in;
+}
+
+h2 {
+    color: #F72C5B;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+p{
+    font-size: 1.2rem;
+}
+
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 950px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#mri-urgent{
+    animation: 1.2s anim2 ease-in;
+}
+#mri-precautions{
+    animation: 2.5s anim2 ease-in;
+}
+#find-mri{
+    animation: 3s anim2 ease-in;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    /* background: #F72C5B; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:#333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}   
+
+button {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #F72C5B;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d72750;
+}
+
+.button-group {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+    margin: 30px;
+}
+
+.button-group button {
+    width: 200px;
+    margin-left: 100px;
+    margin-right:100px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #F72C5B;
+    border-top: 1px solid #F72C5B;
+    height: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: azure;
+    font-style: italic;
+}
+@keyframes anim1 {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes anim2 {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0%);
+        opacity: 1;
+    }
+}

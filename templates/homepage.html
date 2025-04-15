@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='homepage.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital@0;1&family=Raleway:ital,wght@0,459;1,459&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <h1 id="head">Breast Cancer Prediction</h1>
+            <p id="head2">Your health, our priority.</p>
+        </div>
+        <div class="tagline">
+            <a href="{{url_for('index3')}}" id="a1">Self Observation</a>
+            <a href="#contact_sec" id="a1">Contact Us</a>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <section class="card">
+                <h2>Check if You Need an MRI</h2>
+                <p>If you have symptoms but are unsure if you need an MRI, let us guide you.</p>
+                <a href="{{url_for('index2')}}" class="button">Check Now</a>
+            </section>
+    
+            <section class="card">
+                <h2>Analyze MRI Report</h2>
+                <p>If you already have an MRI report, upload it to know if the tumor is cancerous.</p>
+                <a href="{{url_for('index')}}" class="button">Analyze Now</a>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Breast Cancer Prediction | Designed for Awareness and Support By @Sankar & @Mili</p>
+    </footer>
+</body>
+</html>

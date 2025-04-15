@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction - Malignant Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Malignant.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital@0;1&family=Raleway:ital,wght@0,459;1,459&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="head">Breast Cancer Prediction Result</h1>
+        <div class="tagline">
+            <a href="{{url_for('index1')}}" id="home">Home</a>
+            <a href="{{url_for('index2')}}"id="a1" >Check Symptoms</a>
+            <a href="{{url_for('index3')}}" id="a1">Self Observation</a>
+            <a href="#contact_sec" id="a1">Contact Us</a>
+        </div>
+    </header>
+    <div class="container">
+
+        <!-- Result Card -->
+        <div class="result-card malignant">
+            <div class="result-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h2>Your results indicate a <span>higher risk</span> of malignant breast cancer.</h2>
+            <p>Based on your MRI report, our predictive model has classified this case as <strong>malignant</strong>. Please consult an oncologist immediately for further evaluation and confirmation.</p>
+        </div>
+
+        <!-- Next Steps -->
+        <section class="next-steps">
+            <h3><i class="fas fa-list-check"></i> What Should You Do Now?</h3>
+            <ul>
+                <li><i class="fas fa-user-md"></i> <strong>Consult an oncologist</strong> - Book an appointment immediately.</li>
+                <li><i class="fas fa-microscope"></i> <strong>Schedule a biopsy</strong> - Essential for accurate diagnosis.</li>
+                <li><i class="fas fa-stethoscope"></i> <strong>Get a second opinion</strong> - Confirmation is crucial.</li>
+                <li><i class="fas fa-pills"></i> <strong>Discuss treatment options</strong> - Early intervention improves outcomes.</li>
+            </ul>
+        </section>
+
+        <!-- Support & Resources -->
+        <section class="support">
+            <h3><i class="fas fa-hands-helping"></i> You Are Not Alone</h3>
+            <p>Facing breast cancer can be overwhelming, but it’s important to remember that you are stronger than you think. This illness is just a part of your journey, not your whole story. You might feel tired or scared at times, and that’s okay—what matters is that you keep going. You are not alone; many others have faced this and come out even stronger. Stay hopeful, stay brave, and believe in your strength. You’ve got this.</p>
+            <p>Reach out to these resources for support:</p>
+            <div class="resources">
+                <a href="https://www.cancer.org/" target="_blank" class="resource-link">
+                    <i class="fas fa-link"></i> American Cancer Society
+                </a>
+                <a href="https://www.breastcancer.org/" target="_blank" class="resource-link">
+                    <i class="fas fa-link"></i> BreastCancer.org
+                </a>
+                <a href="tel:+180022234234" class="resource-link">
+                    <i class="fas fa-phone"></i> National Cancer Helpline
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="faq">
+            <h3><i class="fas fa-question-circle"></i> Frequently Asked Questions</h3>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">How accurate is this prediction? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>This tool uses machine learning to predict malignancy based on MRI data, but it is not 100% accurate. Always confirm with a biopsy and professional medical advice.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">What are the treatment options? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Malignant breast tumor is treated using surgery, radiation, chemotherapy, hormone therapy, targeted therapy, or immunotherapy. Surgery removes the tumor, while other treatments kill or block cancer cells. The choice depends on cancer type, stage, and health. Clinical trials may also offer new treatment options for some patients.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Can the cancer spread to other parts of my body? <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Yes, malignant breast cancer can spread to other parts of the body. This process is called metastasis. Cancer cells can travel through the bloodstream or lymphatic system and spread to areas like the bones, liver, lungs, or brain. This is more likely in later stages of breast cancer. However, early detection and treatment can help reduce the risk of spread.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <p><i class="fas fa-info-circle"></i> <strong>Disclaimer:</strong> This tool does not replace professional medical advice. Always consult a doctor for diagnosis and treatment.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Breast Cancer Prediction | Designed for Awareness and Support By @Sankar & @Mili</p>
+    </footer>
+
+    <script src="{{ url_for('static',filename='Malignant.js')}}"></script>
+</body>
+</html>

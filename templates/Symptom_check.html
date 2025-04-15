@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>symptom_check</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Symptom_check.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital@0;1&family=Raleway:ital,wght@0,459;1,459&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div class="floating-text" id="floating-text">Welcome to Breast Health Advisor!</div>
+    <!-- Age Input Popup -->
+    <div class="age-form" id="age-form">
+        <form id="age-input-form">
+            <label for="user-age">Please enter your age to get started:</label>
+            <input type="number" id="user-age" placeholder="Enter your age" required>
+            <button type="submit" id="submit-age">Submit</button>
+        </form>
+    </div>
+    <!-- age pop-up -->
+    <div class="age-popup" id="age-popup">
+        <div class="age-popup-content">
+            <p id="age-para">Breast Cancer is less common in young individuals, but it is still important to monitor your health.</p>
+            <button id="pop-submit">Check Symptoms</button>
+        </div>
+    </div>
+    <!-- Symptom Selection -->
+    <div class="symptom-selection" id="symptom-selection">
+        <h2>Select Your Symptoms</h2>
+        <div class="symptom-grid">
+            <div class="symptom-item" id="lump">
+                <img src="{{ url_for('static',filename='images/lump.png')}}" alt="Lump" />
+                <p>Lump</p>
+            </div>
+            <div class="symptom-item" id="dimpling">
+                <img src="{{ url_for('static',filename='images/dump.png')}}" alt="dimpling" />
+                <p>Dimpling</p>
+            </div>
+            <div class="symptom-item" id="change_size">
+                <img src="{{ url_for('static',filename='images/shape.png')}}" alt="Change in Size" />
+                <p>Change in Size</p>
+            </div>
+            <div class="symptom-item" id="inversion">
+                <img src="{{ url_for('static',filename='images/inversion.png')}}" alt="inversion" />
+                <p>Nipple retraction or inversion</p>
+            </div>
+            <div class="symptom-item" id="skin_change">
+                <img src="{{ url_for('static',filename='images/skin.png')}}" alt="Skin Change" />
+                <p>Skin Change</p>
+            </div>
+            <div class="symptom-item" id="discharge">
+                <img src="{{ url_for('static',filename='images/discharge.png')}}" alt="Discharge" />
+                <p>Discharge</p>
+            </div>
+            <div class="symptom-item" id="breast_pain">
+                <img src="{{ url_for('static',filename='images/pain.png')}}" alt="Breast Pain" />
+                <p>Breast Pain</p>
+            </div>
+            <div class="symptom-item" id="fever">
+                <img src="{{ url_for('static',filename='images/fever.jpg')}}" alt="Fever" />
+                <p>Fever</p>
+            </div>
+            <div class="symptom-item" id="family_history">
+                <img src="{{ url_for('static',filename='images/family.jpg')}}" alt="Family History" />
+                <p>Family History</p>
+            </div>
+
+        </div>
+        <button id="submit-symptoms">Submit Symptoms</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Breast Cancer Prediction | Designed for Awareness and Support By @Sankar & @Mili</p>
+    </footer>
+    <script src="{{ url_for('static',filename='Symptom_check.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+
+body {
+    font-family: "Nunito", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    height: 48rem;
+    background-size:cover;
+    background-image: url("images/Breast-Cancer-Blog-.webp");
+}
+
+.floating-text {
+    color: #F72C5B;
+    padding: 10px 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    animation: slideIn 3s ease-out;
+    font-size: 40px;
+    font-weight: bolder;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.age-form {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation:slideIn 3s ease-out ;
+}
+
+.age-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.age-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.age-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.age-form button {
+    padding: 10px 20px;
+    background-color: #F72C5B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Nunito", serif;
+}
+
+.age-form button:hover {
+    background-color: #d72750;
+    cursor: pointer;
+}
+
+.age-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    visibility: hidden;;
+}
+
+.age-popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    font-size: 20px;
+}
+.age-popup-content button {
+    padding: 10px 20px;
+    background-color: #F72C5B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.age-popup-content button:hover {
+    background-color: #d72750;
+    cursor: pointer;
+}
+
+/* Symptom Selection Styles */
+.symptom-selection {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgb(247, 206, 213);
+    border-radius: 80px;
+    animation: slideIn 2s ease-out;
+    display: none;
+}
+
+.symptom-selection h2 {
+    margin-bottom: 15px;
+    color: #F72C5B;
+    font-size: 2rem;
+
+}
+
+.symptom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.symptom-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.symptom-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid pink;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.symptom-item img:hover {
+    transform: scale(1.1);
+    border-color: #F72C5B;
+    cursor: pointer;
+}
+
+.symptom-item p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #F72C5B;
+    font-weight: bold;
+}
+
+.symptom-selection button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #F72C5B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Nunito", serif;
+}
+
+.symptom-selection button:hover {
+    background-color: #d72750;
+    cursor: pointer;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #F72C5B;
+    border-top: 1px solid #F72C5B;
+    height: 2rem;
+    margin-top: 3rem;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: azure;
+    font-style: italic;
+}
