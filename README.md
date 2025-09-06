@@ -41,20 +41,20 @@ The application has two main features:
 ## Project Structure
 
 Breast_Cancer_Prediction/
-│-- Model_Training/ # Trained ML models
-│-- static/         # CSS, JS, Images
-│-- templates/      # HTML files
-│-- app.py          # Main application
-│-- data.csv        # Dataset
-│-- README.md
-│-- requirements.txt
+│-- Model_Training/ # Trained ML models<br>
+│-- static/         # CSS, JS, Images<br>
+│-- templates/      # HTML files<br>
+│-- app.py          # Main application<br>
+│-- data.csv        # Dataset<br>
+│-- README.md<br>
+│-- requirements.txt<br>
 │-- Smili.pkl
 
 ## Author
 
 ## Authors
 - **Sankar Bhunia** – [GitHub: Sankar018](https://github.com/Sankar018)  
-- **[Mili Parua]** – [GitHub: miliparua18](https://github.com/miliparua18)
+- **Mili Parua** – [GitHub: miliparua18](https://github.com/miliparua18)
 
 ## Disclaimer
 
