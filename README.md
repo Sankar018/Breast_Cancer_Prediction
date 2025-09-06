@@ -35,3 +35,31 @@ The application has two main features:
     pip install -r requirements.txt
 3. Run the application:
     python app.py
+4. Open your browser and go to:
+    http://127.0.0.1:5000/
+
+## Project Structure
+
+Breast_Cancer_Prediction/
+│-- Model_Training/ # Trained ML models
+│-- static/         # CSS, JS, Images
+│-- templates/      # HTML files
+│-- app.py          # Main application
+│-- data.csv        # Dataset
+│-- README.md
+│-- requirements.txt
+│-- Smili.pkl
+
+## Author
+
+## Authors
+- **Sankar Bhunia** – [GitHub: Sankar018](https://github.com/Sankar018)  
+- **[Your Teammate's Name]** – [GitHub: teammate_username](https://github.com/miliparua18)
+
+## Disclaimer
+
+This project is for educational purposes only and should not be used as a replacement for professional medical advice.
+
+---
+
+Do you want me to also make a **ready `requirements.txt` file** (with Flask, scikit-learn, numpy, pandas, joblib) so anyone can run your project easily?
