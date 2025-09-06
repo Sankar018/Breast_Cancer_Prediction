@@ -8,7 +8,7 @@ with open('Smili.pkl','rb') as model_file:
 def index():
 	return render_template('MRI_Analysis.html')
 
-@app.route("/home")
+@app.route("/")
 def index1():
 	return render_template('homepage.html')
 
