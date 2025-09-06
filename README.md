@@ -54,7 +54,7 @@ Breast_Cancer_Prediction/
 
 ## Authors
 - **Sankar Bhunia** – [GitHub: Sankar018](https://github.com/Sankar018)  
-- **[Your Teammate's Name]** – [GitHub: teammate_username](https://github.com/miliparua18)
+- **[Mili Parua]** – [GitHub: miliparua18](https://github.com/miliparua18)
 
 ## Disclaimer
 
