@@ -40,13 +40,13 @@ The application has two main features:
 
 ## Project Structure
 
-Breast_Cancer_Prediction/
-│-- Model_Training/ # Trained ML models<br>
-│-- static/         # CSS, JS, Images<br>
-│-- templates/      # HTML files<br>
-│-- app.py          # Main application<br>
-│-- data.csv        # Dataset<br>
-│-- README.md<br>
+Breast_Cancer_Prediction/<br>
+│-- Model_Training/ <br>
+│-- static/         <br>
+│-- templates/      <br>
+│-- app.py          <br>
+│-- data.csv        <br>
+│-- README.md       <br>
 │-- requirements.txt<br>
 │-- Smili.pkl
 
